@@ -38,9 +38,10 @@ function myFunction(){
 
     document.querySelector(".player-one-score").innerHTML = "Score: " + playerOneScore;
     document.querySelector(".player-two-score").innerHTML = "Score: " + playerTwoScore;
+
+    if (playerOneScore === 10){
+        document.querySelector("h1").innerHTML = "Player One Won The game!";
+    } else if (playerTwoScore){
+        document.querySelector("h1").innerHTML = "Player Two Won The game!";
+    }
 }
-
-
-
-
-
