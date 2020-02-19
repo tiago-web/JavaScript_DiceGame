@@ -19,7 +19,7 @@ function myFunction(){
 
 
 
-    // Checking the winner
+    // Checking round winner
     if (randomNum1 > randomNum2){
         document.querySelector("h1").innerHTML = "Player One Win!";
         numOfWins.push(1);
@@ -39,6 +39,8 @@ function myFunction(){
     document.querySelector(".player-one-score").innerHTML = "Score: " + playerOneScore;
     document.querySelector(".player-two-score").innerHTML = "Score: " + playerTwoScore;
 
+
+    // Checking match winner
     if (playerOneScore === 10){
         document.querySelector("h1").innerHTML = "Player One Won The game!";
     } else if (playerTwoScore){
